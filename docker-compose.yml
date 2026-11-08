@@ -1,0 +1,9 @@
+
+services:
+  medicalai:
+    build: .
+    image: medicalai-api
+    container_name: medicalai-container
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
